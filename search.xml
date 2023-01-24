@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Day1-JAVA_HelloWord</title>
+    <url>/archives/b0c606c7.html</url>
+    <content><![CDATA[<p>JAVA-HelloWord</p>
+<span id="more"></span>
+
+<h1 id="Day1-HelloWord"><a href="#Day1-HelloWord" class="headerlink" title="Day1-HelloWord"></a>Day1-HelloWord</h1><p>1.新建一个存放代码的文件夹</p>
+<p>2.新建一个JAVA文件</p>
+<ul>
+<li>将后缀改为java</li>
+</ul>
+<p>3.编写代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWord</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,Word!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>4.运行</p>
+<ul>
+<li><p>先用javac编译文件，生成一个class文件<br><img src="https://8.130.38.112/img/helloword_javac.png" alt="image-20230113214013246"></p>
+</li>
+<li><p>再用Java运行，不需要加.class</p>
+</li>
+</ul>
+<p><img src="https://8.130.38.112/img/helloword_java.png" alt="image-20230113214104495"></p>
+<p>5.代码简单解释</p>
+<blockquote>
+<p>public class表示一个类</p>
+<p>public static void一些关键字</p>
+<p>main表示一个方法，是一个主方法</p>
+<p>System.out.print打印的</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Day1-JAVA环境搭建.md</title>
+    <url>/archives/f6595139.html</url>
+    <content><![CDATA[<p>JAVA环境搭建</p>
+<span id="more"></span>
+
+<h1 id="java环境搭建"><a href="#java环境搭建" class="headerlink" title="java环境搭建"></a>java环境搭建</h1><h2 id="JDK卸载"><a href="#JDK卸载" class="headerlink" title="JDK卸载"></a>JDK卸载</h2><p>通过环境变量找到JDK下载的路径</p>
+<p><img src="https://8.130.38.112/img/add.png" alt="image-20230111213846055"></p>
+<p>切换到下载路径，然后删掉文件</p>
+<p>然后在删除环境变量</p>
+<p><img src="https://8.130.38.112/img/del_cmd.png" alt="image-20230111214739625"></p>
+<p>说明卸载成功</p>
+<h2 id="JDK安装"><a href="#JDK安装" class="headerlink" title="JDK安装"></a>JDK安装</h2><p>1.下载地址<a href="https://www.oracle.com/java/technologies/downloads/#java8">JDK下载</a> (要注册)</p>
+<p>2.双击点击安装包，傻瓜式安装一直点下一步</p>
+<p>3.修改下载配置，更改一下目录</p>
+<p><img src="https://8.130.38.112/img/change.png" alt="image-20230111222915484"></p>
+<p>4.注意坑：安装时会有两个窗口一个是JDK的，另一个是JRE的，这时需要叉掉JRE的安装窗口，否则会卡在安装状态				不变</p>
+<p>5.安装完成后，添加变量</p>
+<p>​	1.在系统变量中，添加一个JAVA_HOME的变量</p>
+<p><img src="https://8.130.38.112/img/java_home.png" alt="image-20230111224044075"></p>
+<p>​	2.配置path变量，配置好如下图的两个变量</p>
+<p><img src="https://8.130.38.112/img/path.png" alt="image-20230111224327844"></p>
+<p>6.验证安装</p>
+<p>​	cmd输入Java -version</p>
+<p>​	出现如下图的提示说明安装成功</p>
+<p><img src="https://8.130.38.112/img/cmd.png" alt="image-20230111224545670"></p>
+<h2 id="目录了解"><a href="#目录了解" class="headerlink" title="目录了解"></a>目录了解</h2><p>bin：可执行程序</p>
+<p>include：引用的头文件</p>
+<p>jre：运行Java程序的</p>
+<p>lib：类库文件</p>
+<p>src：基础类源代码</p>
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MarkDown基础使用语法.md</title>
+    <url>/archives/47a27fdc.html</url>
+    <content><![CDATA[<p>MarkDown基础语法学习</p>
+<span id="more"></span>
+
+<h1 id="MarkDown基础语法学习"><a href="#MarkDown基础语法学习" class="headerlink" title="MarkDown基础语法学习"></a>MarkDown基础语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>只有六级标题</p>
+<p>有#表示或ctrl+数字</p>
+<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p><em>斜体</em> </p>
+<p><strong>粗体</strong></p>
+<p><em><strong>斜粗体</strong></em></p>
+<p><del>删除线</del></p>
+<p><u>下划线</u></p>
+<p>&#x3D;&#x3D;高亮&#x3D;&#x3D;</p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p>引用 使用&gt;</p>
+</blockquote>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>使用—</p>
+<hr>
+<p>使用***</p>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>格式!+ [名字] + (地址)</p>
+<p>地址换成图片url</p>
+<p><img src="https://mat1.gtimg.com/qqcdn/qqindex2021/favicon.ico" alt="网站图片"></p>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p>[名字] + (url)</p>
+<p><a href="https://nubt156.top/">点击我进入我的博客</a></p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>1.加空格</p>
+<p>1.<br>2. </p>
+<p>3. </p>
+<p>-加空格</p>
+<h2 id=""><a href="#" class="headerlink" title="- "></a>- </h2><p>- </p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>右键插入</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>源代码模式插入</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>性别</th>
+<th>生日</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td>男</td>
+<td>2000.1.1</td>
+</tr>
+</tbody></table>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>三个~</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>三个&#96;</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Day1-常用DOS指令.md</title>
+    <url>/archives/aeb3466d.html</url>
+    <content><![CDATA[<p>DOS基础指令</p>
+<span id="more"></span>
+
+<h1 id="DOS基础指令"><a href="#DOS基础指令" class="headerlink" title="DOS基础指令"></a>DOS基础指令</h1><p>常用的DOS指令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> 			<span class="comment"># 切换目录</span></span><br><span class="line"><span class="built_in">cd</span> /d		<span class="comment"># 切换盘符</span></span><br><span class="line"><span class="built_in">dir</span>			<span class="comment"># 查看文件</span></span><br><span class="line">cls			<span class="comment"># 清除屏幕</span></span><br><span class="line"><span class="built_in">exit</span>		<span class="comment"># 退出终端</span></span><br><span class="line">ipconfig	<span class="comment"># 查看本地IP</span></span><br><span class="line">calc		<span class="comment"># 打开计算器</span></span><br><span class="line">mspaint		<span class="comment"># 打开画图</span></span><br><span class="line">notepad		<span class="comment"># 新建记事本</span></span><br><span class="line">md			<span class="comment"># 创建文件夹</span></span><br><span class="line">rd 			<span class="comment"># 删除文件夹</span></span><br><span class="line"><span class="built_in">cd</span>&gt;文件名	  <span class="comment"># 创建文件</span></span><br><span class="line">del			<span class="comment"># 删除文件</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Day2-JAVA_注释</title>
+    <url>/archives/fcf7db5c.html</url>
+    <content><![CDATA[<p>Java-注释</p>
+<span id="more"></span>
+
+<h1 id="Day2-JAVA-注释"><a href="#Day2-JAVA-注释" class="headerlink" title="Day2-JAVA_注释"></a>Day2-JAVA_注释</h1><h2 id="建立空项目"><a href="#建立空项目" class="headerlink" title="建立空项目"></a>建立空项目</h2><ol>
+<li>先建立空项目 文件–&gt;新建–&gt;项目</li>
+</ol>
+<p><img src="https://8.130.38.112/img/zhushi1.png" alt="image-20230114151817350"></p>
+<ol start="2">
+<li>建立空项目 空项目–&gt;名称–&gt;位置–&gt;创建</li>
+</ol>
+<p><img src="https://8.130.38.112/img/zhushi2.png" alt="image-20230114152048046"></p>
+<ol start="3">
+<li>新建一个模块 文件–&gt;新建–&gt;新模块–&gt;名称(最好用英文，不要用汉字)</li>
+</ol>
+<p><img src="https://8.130.38.112/img/zhushi3.png" alt="image-20230114152524457"></p>
+<p><img src="https://8.130.38.112/img/zhushi4.png" alt="image-20230114153105262"></p>
+<ol start="4">
+<li>配置项目结构 项目–&gt;项目结构–&gt;SDK(别爆红) –&gt;语言级别</li>
+</ol>
+<p><img src="https://8.130.38.112/img/zhushi5.png" alt="image-20230114153156808"></p>
+<p><img src="https://8.130.38.112/img/zhushi6.png" alt="image-20230114153506940"></p>
+<ol start="5">
+<li><p>检验是否能够正常使用</p>
+<ul>
+<li><p>新建一个Java文件</p>
+<p><img src="https://8.130.38.112/img/zhushi7.png" alt="image-20230114154038263"></p>
+</li>
+<li><p>写一个hello的代码，正常运行则为配置好</p>
+<p><img src="https://8.130.38.112/img/zhushi8.png" alt="image-20230114154115747"></p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><h3 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h3><p>&#x2F;&#x2F; 注释内容</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 这是单行注释</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h3><p>&#x2F;*注释内容 *&#x2F;</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">这是多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Day2-JAVA-基础.md</title>
+    <url>/archives/fd32663e.html</url>
+    <content><![CDATA[<p>JAVA-基础</p>
+<span id="more"></span>
+
+<h1 id="Day2-JAVA-基础"><a href="#Day2-JAVA-基础" class="headerlink" title="Day2-JAVA-基础"></a>Day2-JAVA-基础</h1><h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><blockquote>
+<table>
+<thead>
+<tr>
+<th><a href="https://baike.baidu.com/item/abstract?fromModule=lemma_inlink">abstract</a></th>
+<th><a href="https://baike.baidu.com/item/assert?fromModule=lemma_inlink">assert</a></th>
+<th><a href="https://baike.baidu.com/item/boolean?fromModule=lemma_inlink">boolean</a></th>
+<th>break</th>
+<th><a href="https://baike.baidu.com/item/byte?fromModule=lemma_inlink">byte</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>case</td>
+<td><a href="https://baike.baidu.com/item/catch?fromModule=lemma_inlink">catch</a></td>
+<td><a href="https://baike.baidu.com/item/char?fromModule=lemma_inlink">char</a></td>
+<td><a href="https://baike.baidu.com/item/class?fromModule=lemma_inlink">class</a></td>
+<td>const</td>
+</tr>
+<tr>
+<td>continue</td>
+<td><a href="https://baike.baidu.com/item/default?fromModule=lemma_inlink">default</a></td>
+<td><a href="https://baike.baidu.com/item/do?fromModule=lemma_inlink">do</a></td>
+<td><a href="https://baike.baidu.com/item/double?fromModule=lemma_inlink">double</a></td>
+<td><a href="https://baike.baidu.com/item/else?fromModule=lemma_inlink">else</a></td>
+</tr>
+<tr>
+<td><a href="https://baike.baidu.com/item/enum?fromModule=lemma_inlink">enum</a></td>
+<td><a href="https://baike.baidu.com/item/extends?fromModule=lemma_inlink">extends</a></td>
+<td><a href="https://baike.baidu.com/item/final?fromModule=lemma_inlink">final</a></td>
+<td><a href="https://baike.baidu.com/item/finally?fromModule=lemma_inlink">finally</a></td>
+<td>float</td>
+</tr>
+<tr>
+<td><a href="https://baike.baidu.com/item/for?fromModule=lemma_inlink">for</a></td>
+<td>goto</td>
+<td><a href="https://baike.baidu.com/item/if?fromModule=lemma_inlink">if</a></td>
+<td><a href="https://baike.baidu.com/item/implements?fromModule=lemma_inlink">implements</a></td>
+<td><a href="https://baike.baidu.com/item/import?fromModule=lemma_inlink">import</a></td>
+</tr>
+<tr>
+<td><a href="https://baike.baidu.com/item/instanceof?fromModule=lemma_inlink">instanceof</a></td>
+<td><a href="https://baike.baidu.com/item/int?fromModule=lemma_inlink">int</a></td>
+<td><a href="https://baike.baidu.com/item/interface?fromModule=lemma_inlink">interface</a></td>
+<td>long</td>
+<td>native</td>
+</tr>
+<tr>
+<td>new</td>
+<td><a href="https://baike.baidu.com/item/package?fromModule=lemma_inlink">package</a></td>
+<td><a href="https://baike.baidu.com/item/private?fromModule=lemma_inlink">private</a></td>
+<td><a href="https://baike.baidu.com/item/protected?fromModule=lemma_inlink">protected</a></td>
+<td><a href="https://baike.baidu.com/item/public?fromModule=lemma_inlink">public</a></td>
+</tr>
+<tr>
+<td><a href="https://baike.baidu.com/item/return?fromModule=lemma_inlink">return</a></td>
+<td><a href="https://baike.baidu.com/item/strictfp?fromModule=lemma_inlink">strictfp</a></td>
+<td><a href="https://baike.baidu.com/item/short?fromModule=lemma_inlink">short</a></td>
+<td><a href="https://baike.baidu.com/item/static?fromModule=lemma_inlink">static</a></td>
+<td><a href="https://baike.baidu.com/item/super?fromModule=lemma_inlink">super</a></td>
+</tr>
+<tr>
+<td><a href="https://baike.baidu.com/item/switch?fromModule=lemma_inlink">switch</a></td>
+<td><a href="https://baike.baidu.com/item/synchronized?fromModule=lemma_inlink">synchronized</a></td>
+<td><a href="https://baike.baidu.com/item/this?fromModule=lemma_inlink">this</a></td>
+<td><a href="https://baike.baidu.com/item/throw?fromModule=lemma_inlink">throw</a></td>
+<td>throws</td>
+</tr>
+<tr>
+<td><a href="https://baike.baidu.com/item/transient?fromModule=lemma_inlink">transient</a></td>
+<td>try</td>
+<td><a href="https://baike.baidu.com/item/void?fromModule=lemma_inlink">void</a></td>
+<td><a href="https://baike.baidu.com/item/volatile?fromModule=lemma_inlink">volatile</a></td>
+<td><a href="https://baike.baidu.com/item/while?fromModule=lemma_inlink">while</a></td>
+</tr>
+</tbody></table>
+</blockquote>
+<h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><p>Java所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符</p>
+<p>标识符都应该以字母，美元符、下划线开始，不能以&#x3D;&#x3D;数字&#x3D;&#x3D;开头</p>
+<p>首字母后的字母，美元符，下划线或数字任意组合</p>
+<p>不能使用关键字作为变量名或方法名</p>
+<p>标识符大小写敏感</p>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>强类型语言</p>
+<p>​	必须先定义再使用	</p>
+<p>JAVA数据类型：</p>
+<ul>
+<li>基本数据类型</li>
+<li>引用数据类型</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型名称</th>
+<th>关键字</th>
+<th>占用内存</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>字节型</td>
+<td>byte</td>
+<td>1 字节</td>
+<td>-128~127</td>
+</tr>
+<tr>
+<td>短整型</td>
+<td>short</td>
+<td>2 字节</td>
+<td>-32768~32767</td>
+</tr>
+<tr>
+<td>整型</td>
+<td>int</td>
+<td>4 字节</td>
+<td>-2147483648~2147483647</td>
+</tr>
+<tr>
+<td>长整型</td>
+<td>long</td>
+<td>8 字节</td>
+<td>-9223372036854775808L~9223372036854775807L</td>
+</tr>
+<tr>
+<td>单精度浮点型</td>
+<td>float</td>
+<td>4 字节</td>
+<td>+&#x2F;-3.4E+38F（6~7 个有效位）</td>
+</tr>
+<tr>
+<td>双精度浮点型</td>
+<td>double</td>
+<td>8 字节</td>
+<td>+&#x2F;-1.8E+308 (15 个有效位）</td>
+</tr>
+<tr>
+<td>字符型</td>
+<td>char</td>
+<td>2 字节</td>
+<td>ISO 单一字符集</td>
+</tr>
+<tr>
+<td>布尔型</td>
+<td>boolean</td>
+<td>1 字节</td>
+<td>true 或 false</td>
+</tr>
+</tbody></table>
+<p><img src="http://c.biancheng.net/uploads/allimg/190909/5-1ZZZ91512493.jpg" alt="Java数据类型结构图"></p>
+<p>&#x3D;&#x3D;注意：&#x3D;&#x3D;</p>
+<p>用long类型时，要在后面加上L，建议用大写，用小写的话会看成1</p>
+<p>用float类型时，要带后面加上F</p>
+<p>char类型，表示一个字符</p>
+<p>string是个类，不是关键词</p>
+<p>例子：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// byte</span></span><br><span class="line"><span class="type">byte</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line"><span class="comment">// short</span></span><br><span class="line"> <span class="type">short</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="comment">// int</span></span><br><span class="line"><span class="type">int</span> <span class="variable">num3</span> <span class="operator">=</span> <span class="number">30</span>;</span><br><span class="line"><span class="comment">// long</span></span><br><span class="line"><span class="type">long</span> <span class="variable">num4</span> <span class="operator">=</span> <span class="number">40L</span>;</span><br><span class="line"><span class="comment">// boolean</span></span><br><span class="line"><span class="type">boolean</span> <span class="variable">num5</span> <span class="operator">=</span> <span class="literal">true</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 八大数据类型使用</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Dome2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">byte</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">        <span class="type">short</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num3</span> <span class="operator">=</span> <span class="number">30</span>;</span><br><span class="line">        <span class="type">long</span> <span class="variable">num4</span> <span class="operator">=</span> <span class="number">40L</span>;</span><br><span class="line">        System.out.println(num);</span><br><span class="line">        System.out.println(num2);</span><br><span class="line">        System.out.println(num3);</span><br><span class="line">        System.out.println(num4);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><h3 id="整数扩展"><a href="#整数扩展" class="headerlink" title="整数扩展"></a>整数扩展</h3><p>二进制0b	十进制	八进制0	十六进制0x</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">dome3</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">// 0b二进制表示</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">0b10</span>;</span><br><span class="line">        <span class="comment">// 0八进制表示</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">010</span>;</span><br><span class="line">        <span class="comment">// 十进制正常表示</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">num3</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">        <span class="comment">// 0x十六进制表示</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">num4</span> <span class="operator">=</span> <span class="number">0x10</span>;</span><br><span class="line">        System.out.println(num);</span><br><span class="line">        System.out.println(num2);</span><br><span class="line">        System.out.println(num3);</span><br><span class="line">        System.out.println(num4);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="浮点数扩展"><a href="#浮点数扩展" class="headerlink" title="浮点数扩展"></a>浮点数扩展</h3><p>银行业务一般不用float类型计算</p>
+<p>float与double</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">dome4</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">float</span> <span class="variable">f1</span> <span class="operator">=</span> <span class="number">0.1f</span>;</span><br><span class="line">        <span class="type">double</span> <span class="variable">d1</span> <span class="operator">=</span> <span class="number">0.1</span>;</span><br><span class="line">        System.out.println(f1==d1);</span><br><span class="line">        System.out.println(f1);</span><br><span class="line">        System.out.println(d1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 结果</span></span><br><span class="line"><span class="comment">// false</span></span><br><span class="line"><span class="comment">// 0.1</span></span><br><span class="line"><span class="comment">// 0.1</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>float与float</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">dome4</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">float</span> <span class="variable">f1</span> <span class="operator">=</span> <span class="number">22222222222222f</span>;</span><br><span class="line">        <span class="type">float</span> <span class="variable">f2</span> <span class="operator">=</span> f1 + <span class="number">1</span>;</span><br><span class="line">        System.out.println(f1==f2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 结果</span></span><br><span class="line"><span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>&#x3D;&#x3D;奇怪的原因：&#x3D;&#x3D;</p>
+<p>案一，按照正常思路，f1与d1的输出结果相同，应该f1与d1相等，那为什么程序给的结果是false呢？</p>
+<p>案二，按照正常思路f1+1后，结果肯定与f1不相同了，那为什么程序给的结果是true呢？</p>
+<p>原因都是float是一个<code>离散、有限、舍入误差、大约、接近但不等于</code>的数据库</p>
+<p>白话就是是一个近似值</p>
+<p>&#x3D;&#x3D;最好完全避免使用浮点数进行比较，可以使用BigDecimal类&#x3D;&#x3D;</p>
+<h3 id="字符扩展"><a href="#字符扩展" class="headerlink" title="字符扩展"></a>字符扩展</h3><p>字符可以强制转换，&#x3D;&#x3D;所有字符的本质都是数字&#x3D;&#x3D;</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> <span class="variable">c1</span> <span class="operator">=</span> <span class="string">&#x27;中&#x27;</span>;</span><br><span class="line">System.out.println((<span class="type">int</span>)c1);</span><br><span class="line"><span class="comment">//20013</span></span><br></pre></td></tr></table></figure>
+
+<p>字符对应着一个编码表，所以可以强制转化为数字；反之一些对应的数字也可以转换为字符</p>
+<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>\t		 制表符，空格<br>\n		换行	<br>\r		 回车<br>\b		退格</p>
+<h3 id="布尔扩展"><a href="#布尔扩展" class="headerlink" title="布尔扩展"></a>布尔扩展</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">true</span>;</span><br><span class="line"><span class="comment">// 方式一：</span></span><br><span class="line"><span class="keyword">if</span> (flag==<span class="literal">true</span>)&#123;&#125;</span><br><span class="line"><span class="comment">// 方式二：</span></span><br><span class="line"><span class="keyword">if</span> (flag)&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><p>分为<code>强制类型转换</code>和<code>自动性转换</code></p>
+<p>强制类型转换是由内存大的转换为内存小的类型</p>
+<p>自动性转换是由内存小的转换为内存打的</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 强制类型转换</span></span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">123</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> (<span class="type">byte</span>)i;</span><br><span class="line"><span class="comment">// 自动性转换</span></span><br><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">111</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> b;</span><br></pre></td></tr></table></figure>
+
+<p>格式：</p>
+<p>强制类型转换  (需转换类型)变量名</p>
+<p>自动性转换	直接写变量名</p>
+<p>&#x3D;&#x3D;注意点：&#x3D;&#x3D;</p>
+<ol>
+<li>不能对布尔值进行转换</li>
+<li>不能将对象类型转换为不相干的类型(变量就是对象，万物皆对象)</li>
+<li>高容量转换为低容量的时候需要强制转换</li>
+<li>强制转换的时候可能会出现内存溢出，或者精度问题</li>
+<li>转换不会四舍五入，直接抹去小数位</li>
+<li>byte&#x2F;short&#x2F;int&#x2F;long在和int 一起计算的时候都会转为int</li>
+</ol>
+<p>JDK7新特性，数字间可以用下划线分割，但结果不会变</p>
+<p>关于内存溢出必懂案例分析：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">money</span> <span class="operator">=</span> <span class="number">10_0000_0000</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">years</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="type">long</span> <span class="variable">total</span> <span class="operator">=</span> money * years;</span><br><span class="line">System.out.println(total);</span><br><span class="line"><span class="comment">//-1474836480</span></span><br></pre></td></tr></table></figure>
+
+<p>关于上面的例子，结果应该为 200 0000 0000才对，为什么是一个复数呢，原来int类型与int类型运算时，结果也为int类型，但int最大容量为21 4748 3647，显然已经超了容量了，这是就会发生内存溢出，然后我们想到的解决办法是将他转换为大容量类型，如long，没错我在第3行显然，有转换为long类型，但负数的结果从int转换为long后任然没变，因为long是大容量类型</p>
+<p>解决办法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">money</span> <span class="operator">=</span> <span class="number">10_0000_0000</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">years</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="type">long</span> <span class="variable">total</span> <span class="operator">=</span> money * (<span class="type">long</span>)years;</span><br><span class="line">System.out.println(total);</span><br><span class="line"><span class="comment">// 20000000000</span></span><br></pre></td></tr></table></figure>
+
+<p>思路就是，int与long计算时，最终结果会自动转换为long，所以long就有足够大的容量来接收结果，就不会发生内存溢出的问题</p>
+<p>&#x3D;&#x3D;案例总结：&#x3D;&#x3D;</p>
+<p>int与int计算，结果自动转换为int</p>
+<p>int与long计算，结果自动转换为long</p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>变量就是一个可以变换的储存空间量</p>
+<p>Java变量是程序中最基本的储存单元，其要素包括变量名，变量类型和作用域</p>
+<p>&#x3D;&#x3D;每一个声明都必须以分号结束&#x3D;&#x3D;</p>
+<p>格式：数据类型 变量名 &#x3D; 值;</p>
+<h3 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h3><p>类变量</p>
+<blockquote>
+<p>static关键词，写在main函数外面，相当于全局变量</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">dome06</span> &#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span> <span class="variable">salary</span> <span class="operator">=</span> <span class="number">2500</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(salary);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 2500</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>实例变量</p>
+<blockquote>
+<p>写在main函数外面，从属于对象，不需要必须初始化，数值类型默认值一般为0或0.0；布尔值默认为false；除了基本类型其余默认值都是null</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用方法</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">dome05</span> &#123;</span><br><span class="line">    String name;</span><br><span class="line">    <span class="type">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">dome05</span> <span class="variable">dome05</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">dome05</span>();</span><br><span class="line">    	dome05.name = <span class="string">&quot;aaa&quot;</span>;		<span class="comment">// 赋值</span></span><br><span class="line">        dome05.age = <span class="number">14</span>;			<span class="comment">// 赋值</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>局部变量</p>
+<blockquote>
+<p>生命周期只在方法以内，也就是方法大括号之间，必须声明和初始化</p>
+</blockquote>
+<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><p>不会改变的值，是一个特殊的变量，值被设定后，程序不允许改变，用<code>final</code>定义</p>
+<blockquote>
+<p>final 常量名 &#x3D; 值</p>
+</blockquote>
+<p>修饰符不存在先后顺序</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">dome07</span> &#123;</span><br><span class="line">	<span class="comment">//static final double PI = 3.14;</span></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">double</span> <span class="variable">PI</span> <span class="operator">=</span> <span class="number">3.14</span>;		<span class="comment">//两种写法都没错</span></span><br><span class="line">		</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(PI);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 3.14</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>&#x3D;&#x3D;命名规范&#x3D;&#x3D;</p>
+<p>所有变量、方法、类名：&#x3D;&#x3D;见名知意&#x3D;&#x3D;</p>
+<p>类成员变量、局部变量、方法名：遵循小驼峰原则</p>
+<p>常量：大写字母和下划线</p>
+<p>类名：大驼峰原则</p>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算数运算符："><a href="#算数运算符：" class="headerlink" title="算数运算符："></a>算数运算符：</h3><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>+</code></td>
+<td>加法运算符,第一个操作数加上第二个数操作数</td>
+<td><code>A + B</code>结果为：<code>30</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>减法运算符,从第一个操作数减去第二个操作数</td>
+<td><code>A - B</code>结果为：<code>-10</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>两个操作数相乘</td>
+<td><code>A * B</code>结果为：<code>200</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>左操作数除以右操作数返回模值</td>
+<td><code>B / A</code>结果为：<code>2</code></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>左操作数除以右操作数返回余数</td>
+<td><code>B / A</code>结果为：<code>0</code></td>
+</tr>
+<tr>
+<td><code>++</code></td>
+<td>将操作数的值增加<code>1</code></td>
+<td><code>A++</code>，则<code>A</code>的值为：<code>11</code></td>
+</tr>
+<tr>
+<td><code>--</code></td>
+<td>将操作数的值减<code>1</code></td>
+<td><code>A--</code>，则<code>A</code>的值为：<code>9</code></td>
+</tr>
+</tbody></table>
+<p>算数运算时，整数结果一般都是int类型， </p>
+<p>如果与其他类型计算，结果按最高位类型</p>
+<hr>
+<p>&#x3D;&#x3D;a++与++a的区别&#x3D;&#x3D;</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// a++</span></span><br><span class="line"><span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> num++;</span><br><span class="line">System.out.println(num);</span><br><span class="line">System.out.println(b);</span><br><span class="line"><span class="comment">// 结果</span></span><br><span class="line"><span class="comment">// 4</span></span><br><span class="line"><span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ++a</span></span><br><span class="line"><span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> ++a;</span><br><span class="line">System.out.println(b);</span><br><span class="line">System.out.println(a);</span><br><span class="line"><span class="comment">// 结果</span></span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+
+<p>通过案例说区别总结：</p>
+<pre><code> int b = ++a是两个语句： int b = a; a = a +1;所以打印b就等于3
+</code></pre>
+<p>&#x3D;&#x3D;a++是赋值，然后再自增。&#x3D;&#x3D;所以a&#x3D;3先赋给b，这是b&#x3D;3，然后再自增，a+1，a于是就等于4</p>
+<p>&#x3D;&#x3D;++a是先自增，再赋值。&#x3D;&#x3D;所以a&#x3D;1先加1，等于2，然后再将2赋值给b</p>
+<hr>
+<p>&#x3D;&#x3D;幂运算：&#x3D;&#x3D;</p>
+<p>需要借助Math类的pow</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">pow</span> <span class="operator">=</span> Math.pow(<span class="number">3</span>, <span class="number">2</span>);</span><br><span class="line">System.out.println(pow);</span><br><span class="line"><span class="comment">// 9.0</span></span><br></pre></td></tr></table></figure>
+
+<p>(3, 2)表示3的2次方</p>
+<h3 id="关系运算符："><a href="#关系运算符：" class="headerlink" title="关系运算符："></a>关系运算符：</h3><table>
+<thead>
+<tr>
+<th><strong>运算符</strong></th>
+<th><strong>描述</strong></th>
+<th><strong>示例</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x3D;&#x3D;</td>
+<td>等于运算符，检查两个操作数的值是否相等，如果相等，则条件变为真。</td>
+<td>A&#x3D;&#x3D;B结果为假。</td>
+</tr>
+<tr>
+<td>!&#x3D;</td>
+<td>不等于运算符，检查两个操作数的值是否不相等，如果不相等，则条件变为真。</td>
+<td>A!&#x3D;B结果为真。</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于运算符，检查左操作数的值是否大于右操作数的值，如果大于，则条件变为真。</td>
+<td>A&gt;B结果为假。</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于运算符，检查左操作数的值是否小于右操作数的值，如果小于，则条件变为真。</td>
+<td>A&lt;B结果为真。</td>
+</tr>
+<tr>
+<td>&gt;&#x3D;</td>
+<td>大于或等于运算符，检查左操作数的值是否大于等于右操作数的值，如果大于或等于，则条件变为真。</td>
+<td>A&gt;&#x3D;B结果为假。</td>
+</tr>
+<tr>
+<td>&lt;&#x3D;</td>
+<td>小于或等于运算符，检查左操作数的值是否小于或等于右操作数的值，如果小于或等于，则条件变为真。</td>
+<td>A&lt;&#x3D;B结果为真。</td>
+</tr>
+</tbody></table>
+<h3 id="逻辑运算符："><a href="#逻辑运算符：" class="headerlink" title="逻辑运算符："></a>逻辑运算符：</h3><p>假设布尔变量A的值为：true，变量B 的值为：false，则 -</p>
+<table>
+<thead>
+<tr>
+<th><strong>运算符</strong></th>
+<th><strong>描述</strong></th>
+<th><strong>示例</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;&amp;</td>
+<td>逻辑AND运算符。 如果两个操作数都不为零，则条件成立。</td>
+<td>(A &amp;&amp; B)结果为：false</td>
+</tr>
+<tr>
+<td>ΙΙ</td>
+<td>逻辑OR运算符。 如果两个操作数中的任何一个非零，则条件变为真。</td>
+<td>(A ΙΙ B)结果为：true</td>
+</tr>
+<tr>
+<td>!</td>
+<td>逻辑非运算符。用于反转其操作数的逻辑状态。 如果条件为真，则口逻辑NOT运算符将为false。</td>
+<td>!(A &amp;&amp; B)结果为：true</td>
+</tr>
+</tbody></table>
+<h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3><p>效率极高！！！</p>
+<p>是用于二进制的，有&amp; | ^ ~ &lt;&lt; &gt;&gt;，通过上下对应位</p>
+<p>通过例子理解 0相当于false，1相当于true</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A = 0011 1100</span><br><span class="line">B = 0000 1101</span><br><span class="line">-------------</span><br><span class="line">A&amp;B = 0000 1100		</span><br><span class="line">A|B = 0011 1101</span><br><span class="line">A^B = 0011 0001    // 相同为0，否则为1</span><br><span class="line">~B = 1111 0010	   // 0为true，1为false</span><br></pre></td></tr></table></figure>
+
+<p>&lt;&lt; 左移，相当于将数*2    &gt;&gt;右移，相当于将数&#x2F;2</p>
+<p>左移右移是指二进制中1移动的位置</p>
+<h3 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h3><p>a+&#x3D;b 就是a &#x3D; a+b       a -&#x3D; b 就是 a &#x3D; a-b</p>
+<p>&#x3D;&#x3D;字符串连接符&#x3D;&#x3D;用+拼接，只要String类型在前面就会拼接</p>
+<p>数字想拼接时，如果String在数字后是不能拼接的，例子：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">System.out.println(<span class="string">&quot;&quot;</span>+a+b);			<span class="comment">// 23</span></span><br><span class="line">System.out.println(a+b+<span class="string">&quot;&quot;</span>);			<span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+
+<p>x ? y : z</p>
+<p>意思：如果x为true，则结果为y，否则为z</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">grade</span> <span class="operator">=</span> <span class="number">40</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">result</span>  <span class="operator">=</span> grade&lt;<span class="number">60</span>?<span class="string">&quot;不及格&quot;</span>:<span class="string">&quot;及格&quot;</span>;</span><br><span class="line">System.out.println(result);</span><br></pre></td></tr></table></figure>
+
+<p>关于优先级，是先运算带有括号里边的</p>
+<h2 id="包机制"><a href="#包机制" class="headerlink" title="包机制"></a>包机制</h2><p>包的本质就是文件夹</p>
+<p>一般利用公司域名倒置作为包名</p>
+<p>尽量不要让包的名字重复</p>
+<p>定义包<code>package</code>		导入包<code>import</code></p>
+<p>*表示通配符，加上会导入这个包下所有的类</p>
+<h2 id="JavaDoc"><a href="#JavaDoc" class="headerlink" title="JavaDoc"></a>JavaDoc</h2><p>javadoc命令是用来生成自己API文档的</p>
+<p>参数信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@author 	作者名</span><br><span class="line">@version	版本号</span><br><span class="line">@since		指明需要最早使用jdk版本</span><br><span class="line">@param		参数名</span><br><span class="line">@return		返回值结果</span><br><span class="line">@throw		异常抛出结果</span><br></pre></td></tr></table></figure>
+
+<p>使用命令生成：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">javadoc -encoding UTF-8 -charset UTF-8 文件名</span><br></pre></td></tr></table></figure>
+
+<p>-encoding UTF-8 -charset UTF-8是用来避免中文乱码</p>
+<p>形成后，在当前路径运行index.html就可以看到</p>
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/404.html</url>
+    <content><![CDATA[+layout: false
++---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>404</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="/" homePageName="返回"></script> 
+    </body>
+</html>
+]]></content>
+  </entry>
+  <entry>
+    <title>about</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>文章分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+</search>
