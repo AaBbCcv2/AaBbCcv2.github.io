@@ -35,6 +35,42 @@
       </tags>
   </entry>
   <entry>
+    <title>Day1-JAVA环境搭建.md</title>
+    <url>/archives/f6595139.html</url>
+    <content><![CDATA[<p>JAVA环境搭建</p>
+<span id="more"></span>
+
+<h1 id="java环境搭建"><a href="#java环境搭建" class="headerlink" title="java环境搭建"></a>java环境搭建</h1><h2 id="JDK卸载"><a href="#JDK卸载" class="headerlink" title="JDK卸载"></a>JDK卸载</h2><p>通过环境变量找到JDK下载的路径</p>
+<p><img src="https://nubt156.top/images/add.png" alt="image-20230111213846055"></p>
+<p>切换到下载路径，然后删掉文件</p>
+<p>然后在删除环境变量</p>
+<p><img src="https://nubt156.top/images/del_cmd.png" alt="image-20230111214739625"></p>
+<p>说明卸载成功</p>
+<h2 id="JDK安装"><a href="#JDK安装" class="headerlink" title="JDK安装"></a>JDK安装</h2><p>1.下载地址<a href="https://www.oracle.com/java/technologies/downloads/#java8">JDK下载</a> (要注册)</p>
+<p>2.双击点击安装包，傻瓜式安装一直点下一步</p>
+<p>3.修改下载配置，更改一下目录</p>
+<p><img src="https://nubt156.top/images/change.png" alt="image-20230111222915484"></p>
+<p>4.注意坑：安装时会有两个窗口一个是JDK的，另一个是JRE的，这时需要叉掉JRE的安装窗口，否则会卡在安装状态				不变</p>
+<p>5.安装完成后，添加变量</p>
+<p>​	1.在系统变量中，添加一个JAVA_HOME的变量</p>
+<p><img src="https://nubt156.top/images/java_home.png" alt="image-20230111224044075"></p>
+<p>​	2.配置path变量，配置好如下图的两个变量</p>
+<p><img src="https://nubt156.top/images/path.png" alt="image-20230111224327844"></p>
+<p>6.验证安装</p>
+<p>​	cmd输入Java -version</p>
+<p>​	出现如下图的提示说明安装成功</p>
+<p><img src="https://nubt156.top/images/cmd.png" alt="image-20230111224545670"></p>
+<h2 id="目录了解"><a href="#目录了解" class="headerlink" title="目录了解"></a>目录了解</h2><p>bin：可执行程序</p>
+<p>include：引用的头文件</p>
+<p>jre：运行Java程序的</p>
+<p>lib：类库文件</p>
+<p>src：基础类源代码</p>
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MarkDown基础使用语法.md</title>
     <url>/archives/47a27fdc.html</url>
     <content><![CDATA[<p>MarkDown基础语法学习</p>
@@ -116,42 +152,6 @@
 
 
 
-]]></content>
-      <tags>
-        <tag>JavaSE学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Day1-JAVA环境搭建.md</title>
-    <url>/archives/f6595139.html</url>
-    <content><![CDATA[<p>JAVA环境搭建</p>
-<span id="more"></span>
-
-<h1 id="java环境搭建"><a href="#java环境搭建" class="headerlink" title="java环境搭建"></a>java环境搭建</h1><h2 id="JDK卸载"><a href="#JDK卸载" class="headerlink" title="JDK卸载"></a>JDK卸载</h2><p>通过环境变量找到JDK下载的路径</p>
-<p><img src="https://nubt156.top/images/add.png" alt="image-20230111213846055"></p>
-<p>切换到下载路径，然后删掉文件</p>
-<p>然后在删除环境变量</p>
-<p><img src="https://nubt156.top/images/del_cmd.png" alt="image-20230111214739625"></p>
-<p>说明卸载成功</p>
-<h2 id="JDK安装"><a href="#JDK安装" class="headerlink" title="JDK安装"></a>JDK安装</h2><p>1.下载地址<a href="https://www.oracle.com/java/technologies/downloads/#java8">JDK下载</a> (要注册)</p>
-<p>2.双击点击安装包，傻瓜式安装一直点下一步</p>
-<p>3.修改下载配置，更改一下目录</p>
-<p><img src="https://nubt156.top/images/change.png" alt="image-20230111222915484"></p>
-<p>4.注意坑：安装时会有两个窗口一个是JDK的，另一个是JRE的，这时需要叉掉JRE的安装窗口，否则会卡在安装状态				不变</p>
-<p>5.安装完成后，添加变量</p>
-<p>​	1.在系统变量中，添加一个JAVA_HOME的变量</p>
-<p><img src="https://nubt156.top/images/java_home.png" alt="image-20230111224044075"></p>
-<p>​	2.配置path变量，配置好如下图的两个变量</p>
-<p><img src="https://nubt156.top/images/path.png" alt="image-20230111224327844"></p>
-<p>6.验证安装</p>
-<p>​	cmd输入Java -version</p>
-<p>​	出现如下图的提示说明安装成功</p>
-<p><img src="https://nubt156.top/images/cmd.png" alt="image-20230111224545670"></p>
-<h2 id="目录了解"><a href="#目录了解" class="headerlink" title="目录了解"></a>目录了解</h2><p>bin：可执行程序</p>
-<p>include：引用的头文件</p>
-<p>jre：运行Java程序的</p>
-<p>lib：类库文件</p>
-<p>src：基础类源代码</p>
 ]]></content>
       <tags>
         <tag>JavaSE学习</tag>
