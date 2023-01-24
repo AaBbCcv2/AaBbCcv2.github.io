@@ -2612,7 +2612,7 @@ mark.search-keyword {
 body {
   background: url("https://nubt156.top/images/background.jpg");
   background-repeat: no-repeat;
-  background-attachment: local;
+  background-attachment: fixed;
   background-position: 100% 100%;
 }
 .content-wrap {
