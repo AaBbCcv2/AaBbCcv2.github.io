@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Day1-JAVA_HelloWord</title>
+    <url>/archives/b0c606c7.html</url>
+    <content><![CDATA[<p>JAVA-HelloWord</p>
+<span id="more"></span>
+
+<h1 id="Day1-HelloWord"><a href="#Day1-HelloWord" class="headerlink" title="Day1-HelloWord"></a>Day1-HelloWord</h1><p>1.新建一个存放代码的文件夹</p>
+<p>2.新建一个JAVA文件</p>
+<ul>
+<li>将后缀改为java</li>
+</ul>
+<p>3.编写代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWord</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,Word!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>4.运行</p>
+<ul>
+<li><p>先用javac编译文件，生成一个class文件<br><img src="https://nubt156.top/images/helloword_javac.png" alt="image-20230113214013246"></p>
+</li>
+<li><p>再用Java运行，不需要加.class</p>
+</li>
+</ul>
+<p><img src="https://nubt156.top/images/helloword_java.png" alt="image-20230113214104495"></p>
+<p>5.代码简单解释</p>
+<blockquote>
+<p>public class表示一个类</p>
+<p>public static void一些关键字</p>
+<p>main表示一个方法，是一个主方法</p>
+<p>System.out.print打印的</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Day1-JAVA环境搭建.md</title>
     <url>/archives/f6595139.html</url>
     <content><![CDATA[<p>JAVA环境搭建</p>
@@ -31,40 +65,6 @@
 <p>jre：运行Java程序的</p>
 <p>lib：类库文件</p>
 <p>src：基础类源代码</p>
-]]></content>
-      <tags>
-        <tag>JavaSE学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Day1-JAVA_HelloWord</title>
-    <url>/archives/b0c606c7.html</url>
-    <content><![CDATA[<p>JAVA-HelloWord</p>
-<span id="more"></span>
-
-<h1 id="Day1-HelloWord"><a href="#Day1-HelloWord" class="headerlink" title="Day1-HelloWord"></a>Day1-HelloWord</h1><p>1.新建一个存放代码的文件夹</p>
-<p>2.新建一个JAVA文件</p>
-<ul>
-<li>将后缀改为java</li>
-</ul>
-<p>3.编写代码</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWord</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		System.out.print(<span class="string">&quot;Hello,Word!&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>4.运行</p>
-<ul>
-<li><p>先用javac编译文件，生成一个class文件<br><img src="https://nubt156.top/images/helloword_javac.png" alt="image-20230113214013246"></p>
-</li>
-<li><p>再用Java运行，不需要加.class</p>
-</li>
-</ul>
-<p><img src="https://nubt156.top/images/helloword_java.png" alt="image-20230113214104495"></p>
-<p>5.代码简单解释</p>
-<blockquote>
-<p>public class表示一个类</p>
-<p>public static void一些关键字</p>
-<p>main表示一个方法，是一个主方法</p>
-<p>System.out.print打印的</p>
-</blockquote>
 ]]></content>
       <tags>
         <tag>JavaSE学习</tag>
