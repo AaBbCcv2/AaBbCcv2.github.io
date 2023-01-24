@@ -158,25 +158,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Day1-常用DOS指令.md</title>
-    <url>/archives/aeb3466d.html</url>
-    <content><![CDATA[<p>DOS基础指令</p>
-<span id="more"></span>
-
-<h1 id="DOS基础指令"><a href="#DOS基础指令" class="headerlink" title="DOS基础指令"></a>DOS基础指令</h1><p>常用的DOS指令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> 			<span class="comment"># 切换目录</span></span><br><span class="line"><span class="built_in">cd</span> /d		<span class="comment"># 切换盘符</span></span><br><span class="line"><span class="built_in">dir</span>			<span class="comment"># 查看文件</span></span><br><span class="line">cls			<span class="comment"># 清除屏幕</span></span><br><span class="line"><span class="built_in">exit</span>		<span class="comment"># 退出终端</span></span><br><span class="line">ipconfig	<span class="comment"># 查看本地IP</span></span><br><span class="line">calc		<span class="comment"># 打开计算器</span></span><br><span class="line">mspaint		<span class="comment"># 打开画图</span></span><br><span class="line">notepad		<span class="comment"># 新建记事本</span></span><br><span class="line">md			<span class="comment"># 创建文件夹</span></span><br><span class="line">rd 			<span class="comment"># 删除文件夹</span></span><br><span class="line"><span class="built_in">cd</span>&gt;文件名	  <span class="comment"># 创建文件</span></span><br><span class="line">del			<span class="comment"># 删除文件</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-]]></content>
-      <tags>
-        <tag>JavaSE学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Day2-JAVA_注释</title>
     <url>/archives/fcf7db5c.html</url>
     <content><![CDATA[<p>Java-注释</p>
@@ -219,6 +200,25 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">这是多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Day1-常用DOS指令.md</title>
+    <url>/archives/aeb3466d.html</url>
+    <content><![CDATA[<p>DOS基础指令</p>
+<span id="more"></span>
+
+<h1 id="DOS基础指令"><a href="#DOS基础指令" class="headerlink" title="DOS基础指令"></a>DOS基础指令</h1><p>常用的DOS指令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> 			<span class="comment"># 切换目录</span></span><br><span class="line"><span class="built_in">cd</span> /d		<span class="comment"># 切换盘符</span></span><br><span class="line"><span class="built_in">dir</span>			<span class="comment"># 查看文件</span></span><br><span class="line">cls			<span class="comment"># 清除屏幕</span></span><br><span class="line"><span class="built_in">exit</span>		<span class="comment"># 退出终端</span></span><br><span class="line">ipconfig	<span class="comment"># 查看本地IP</span></span><br><span class="line">calc		<span class="comment"># 打开计算器</span></span><br><span class="line">mspaint		<span class="comment"># 打开画图</span></span><br><span class="line">notepad		<span class="comment"># 新建记事本</span></span><br><span class="line">md			<span class="comment"># 创建文件夹</span></span><br><span class="line">rd 			<span class="comment"># 删除文件夹</span></span><br><span class="line"><span class="built_in">cd</span>&gt;文件名	  <span class="comment"># 创建文件</span></span><br><span class="line">del			<span class="comment"># 删除文件</span></span><br></pre></td></tr></table></figure>
+
+
 
 
 
