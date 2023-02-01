@@ -535,7 +535,7 @@
 <td>true 或 false</td>
 </tr>
 </tbody></table>
-<p><img src="http://c.biancheng.net/uploads/allimg/190909/5-1ZZZ91512493.jpg" alt="Java数据类型结构图"></p>
+<p><img src="/images/basic-1.jpg" alt="Java数据类型结构图"></p>
 <p>&#x3D;&#x3D;注意：&#x3D;&#x3D;</p>
 <p>用long类型时，要在后面加上L，建议用大写，用小写的话会看成1</p>
 <p>用float类型时，要带后面加上F</p>
