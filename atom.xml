@@ -6,7 +6,7 @@
   <link href="https://nubt156.top/atom.xml" rel="self"/>
   
   <link href="https://nubt156.top/"/>
-  <updated>2023-01-31T15:48:48.126Z</updated>
+  <updated>2023-02-11T13:19:48.757Z</updated>
   <id>https://nubt156.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Day4-JAVA-方法</title>
+    <link href="https://nubt156.top/archives/fb1fec32.html"/>
+    <id>https://nubt156.top/archives/fb1fec32.html</id>
+    <published>2023-02-11T20:52:22.000Z</published>
+    <updated>2023-02-11T13:19:48.757Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;JAVA-方法&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="JavaSE学习" scheme="https://nubt156.top/tags/JavaSE%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Day3-JAVA-流程控制.md</title>
