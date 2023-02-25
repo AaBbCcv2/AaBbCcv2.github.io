@@ -468,6 +468,233 @@
       </tags>
   </entry>
   <entry>
+    <title>Day5-JAVA-数组</title>
+    <url>/archives/bf8ac020.html</url>
+    <content><![CDATA[<p>JAVA-数组</p>
+<span id="more"></span>
+
+<h1 id="Day5-JAVA-数组"><a href="#Day5-JAVA-数组" class="headerlink" title="Day5-JAVA-数组"></a>Day5-JAVA-数组</h1><h2 id="数组的定义"><a href="#数组的定义" class="headerlink" title="数组的定义"></a>数组的定义</h2><ul>
+<li>数组就是相同类型数据的有序集合</li>
+<li>数组描述的是相同类型的若干个数据，按照一定的先后次序排列组合而成</li>
+<li>其中，每一个数据都称作一个数据元素，每个数据元素可以通过一个下表来访问他们</li>
+</ul>
+<h2 id="数组使用"><a href="#数组使用" class="headerlink" title="数组使用"></a>数组使用</h2><h3 id="声明–-gt-开辟空间–-gt-赋值"><a href="#声明–-gt-开辟空间–-gt-赋值" class="headerlink" title="声明–&gt;开辟空间–&gt;赋值"></a>声明–&gt;开辟空间–&gt;赋值</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 声明</span></span><br><span class="line">dataType[] arrayName;		<span class="comment">// 首选的方法</span></span><br><span class="line">或</span><br><span class="line">dataType arrayNme[];		<span class="comment">// 效果相同</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开辟空间</span></span><br><span class="line">arrayName = <span class="keyword">new</span> <span class="title class_">dataType</span>[arraySize];</span><br><span class="line">或</span><br><span class="line">dataType[] arrayName = <span class="keyword">new</span> <span class="title class_">dataType</span>[arraySize];</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 赋值(通过下标)</span></span><br><span class="line">arrayName[index] = value;</span><br></pre></td></tr></table></figure>
+
+<p>获取数组大小可以用arrayName.length</p>
+<hr>
+<p>&#x3D;&#x3D;内存分析&#x3D;&#x3D;</p>
+<p>数组声明是放在栈中，而真正创建出的数组放在堆中</p>
+<p><img src="/images/Day5-1.png" alt="image-20230218142303826"></p>
+<hr>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p><code>静态初始化</code>：声明+创建+赋值 一条龙</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] array = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><code>动态初始化</code>：声明–&gt;创建–&gt;赋值</p>
+<p>动态初始化包括默认初始化，值默认是0</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] array = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>];</span><br><span class="line">array[<span class="number">0</span>] = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><p>可以看成数组中的数组，其每个元素都是数组</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[][] arrays = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>&#125;, &#123;<span class="number">2</span>,<span class="number">3</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>定义就是在类型后加[]，几维数组就加几个[]</p>
+<p>上面是二维数组，同理三位数组就是int[ ] [ ] [ ]</p>
+<p>上面的arrays就可以看作两行两列</p>
+<p>&#x3D;&#x3D;多维数组使用&#x3D;&#x3D;</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[][] arrays = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>&#125;, &#123;<span class="number">2</span>,<span class="number">3</span>&#125;&#125;;</span><br><span class="line">System.out.println(arrays[<span class="number">0</span>][<span class="number">0</span>]);</span><br></pre></td></tr></table></figure>
+
+<p>arrays第一个[0]表示数组中第一个元素，也就是{1,2}，然后第二个[0]表示{1,2}中第一个元素</p>
+<p><img src="/images/Day5-2.png" alt="image-20230218210226351"></p>
+<h2 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h2><h3 id="Arrays-toString"><a href="#Arrays-toString" class="headerlink" title="Arrays.toString"></a><code>Arrays.toString</code></h3><p>打印数组内容</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] a = &#123;<span class="number">1</span>,<span class="number">6</span>,<span class="number">845</span>,<span class="number">774</span>,<span class="number">85</span>,<span class="number">4</span>,<span class="number">78</span>,<span class="number">74</span>&#125;;</span><br><span class="line">System.out.println(Arrays.toString(a));</span><br><span class="line"><span class="comment">// [1, 6, 845, 774, 85, 4, 78, 74]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Arrays-sort"><a href="#Arrays-sort" class="headerlink" title="Arrays.sort"></a><code>Arrays.sort</code></h3><p>对数组进行排序，升序</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] a = &#123;<span class="number">1</span>,<span class="number">6</span>,<span class="number">845</span>,<span class="number">774</span>,<span class="number">85</span>,<span class="number">4</span>,<span class="number">78</span>,<span class="number">74</span>&#125;;</span><br><span class="line">Arrays.sort(a);</span><br><span class="line">System.out.println(Arrays.toString(a));</span><br><span class="line"><span class="comment">// [1, 4, 6, 74, 78, 85, 774, 845]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Arrays-fill"><a href="#Arrays-fill" class="headerlink" title="Arrays.fill"></a><code>Arrays.fill</code></h3><p>数组填充，可以理解为覆盖</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] a = &#123;<span class="number">1</span>,<span class="number">6</span>,<span class="number">845</span>,<span class="number">774</span>,<span class="number">85</span>,<span class="number">4</span>,<span class="number">78</span>,<span class="number">74</span>&#125;;</span><br><span class="line">Arrays.fill(a, <span class="number">666</span>);</span><br><span class="line">System.out.println(Arrays.toString(a));</span><br><span class="line"><span class="comment">// [666, 666, 666, 666, 666, 666, 666, 666]</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] a = &#123;<span class="number">1</span>,<span class="number">6</span>,<span class="number">845</span>,<span class="number">774</span>,<span class="number">85</span>,<span class="number">4</span>,<span class="number">78</span>,<span class="number">74</span>&#125;;</span><br><span class="line">Arrays.fill(a,<span class="number">2</span>, <span class="number">4</span>, <span class="number">666</span>);</span><br><span class="line">System.out.println(Arrays.toString(a));</span><br><span class="line"><span class="comment">// [1, 6, 666, 666, 85, 4, 78, 74]</span></span><br></pre></td></tr></table></figure>
+
+<p>在Arrays.fill(a,2, 4, 666)的语句中的2, 4表示从数组第2位到第四位填充成666</p>
+<h3 id="Arrays-equals"><a href="#Arrays-equals" class="headerlink" title="Arrays.equals"></a><code>Arrays.equals</code></h3><p>进行数组比较</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] a = &#123;<span class="number">1</span>,<span class="number">6</span>&#125;;</span><br><span class="line"><span class="type">int</span>[] b = &#123;<span class="number">1</span>,<span class="number">6</span>&#125;;</span><br><span class="line">System.out.println(Arrays.equals(a, b));</span><br><span class="line"><span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p>进行两次循环，第一次循环是循环的轮数，第二次是内循环</p>
+<p>然后进行比较如果前一个数比后一个数大就相互交换位置</p>
+<p>从而达到一种排序效果</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="type">int</span>[] nums = &#123;<span class="number">2</span>,<span class="number">56</span>,<span class="number">8855</span>,<span class="number">85</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">484</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span>[] up = up(nums);</span><br><span class="line">    System.out.println(Arrays.toString(up));</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] up(<span class="type">int</span>[] nums) &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">dump</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">    <span class="comment">// 轮数</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; nums.length-<span class="number">1</span>; i++) &#123;</span><br><span class="line">        <span class="comment">// 内循环</span></span><br><span class="line">        <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">two</span> <span class="operator">=</span> <span class="number">0</span>;two &lt;nums.length-<span class="number">1</span>-i;two++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[two]&gt;nums[two+<span class="number">1</span>])&#123;</span><br><span class="line">                dump = nums[two+<span class="number">1</span>];</span><br><span class="line">                nums[two+<span class="number">1</span>] = nums[two];</span><br><span class="line">                nums[two] = dump;</span><br><span class="line">                flag = <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (flag==<span class="literal">false</span>)&#123;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> nums;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>关于定义flag &#x3D; false的原因：</p>
+<ul>
+<li>这是一种优化，用来减少循环轮数，从而缩短时间</li>
+<li>大概意思就是：这个数组有7个数，假如当循环到4次的时候没有数字变动（说明已经排序好了），其中一轮循环中的内循环结束，nums[two]&gt;nums[two+1]这一条语句就为false，里面的语句就不会执行，flag就不会变成true，也就是false，因为内循环结束，就会执行if(flag&#x3D;&#x3D;false)退出循环，从而减少了循环轮数</li>
+</ul>
+<h2 id="稀疏数组"><a href="#稀疏数组" class="headerlink" title="稀疏数组"></a>稀疏数组</h2><p>用于压缩，其主要目的是将关键信息记录下来，然后保存下来，再读取还原表</p>
+<p>举例：</p>
+<hr>
+<p>表：</p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>0</th>
+<th>0</th>
+<th>22</th>
+<th>0</th>
+<th>0</th>
+<th>15</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>17</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>-6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>39</td>
+<td>0</td>
+</tr>
+<tr>
+<td>91</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>28</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>稀疏组：</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">行</th>
+<th align="center">列</th>
+<th align="center">值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">[0]</td>
+<td align="center">6</td>
+<td align="center">7</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">[1]</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">22</td>
+</tr>
+<tr>
+<td align="center">[2]</td>
+<td align="center">0</td>
+<td align="center">6</td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td align="center">[3]</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">[4]</td>
+<td align="center">1</td>
+<td align="center">5</td>
+<td align="center">17</td>
+</tr>
+<tr>
+<td align="center">[5]</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">-6</td>
+</tr>
+<tr>
+<td align="center">[6]</td>
+<td align="center">3</td>
+<td align="center">5</td>
+<td align="center">39</td>
+</tr>
+<tr>
+<td align="center">[7]</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">91</td>
+</tr>
+<tr>
+<td align="center">[8]</td>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">28</td>
+</tr>
+</tbody></table>
+<p>第一行，即[0]行：</p>
+<ul>
+<li><p>稀疏组中[0]行是用于存储表的格式，即是一个6行、7列、有8个关键字的表</p>
+</li>
+<li><p>第一行的8是用于确定稀疏组的行数</p>
+</li>
+</ul>
+<p>第一行以下的，即[1]-[8]行：</p>
+<ul>
+<li>行、列用来表示关键字的横纵坐标，就是用来表示这个关键字在二维数组中的哪个地方</li>
+<li>值就是这个关键字的值</li>
+</ul>
+<p>用代码塑造出这个稀疏数组后，通过读取对应的数字就可以还原表</p>
+<hr>
+<p>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[][] arrays1 = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">11</span>][<span class="number">11</span>];</span><br><span class="line">arrays1[<span class="number">1</span>][<span class="number">2</span>] = <span class="number">1</span>;</span><br><span class="line">arrays1[<span class="number">2</span>][<span class="number">3</span>] = <span class="number">1</span>;</span><br><span class="line">System.out.println(<span class="string">&quot;原始数组：&quot;</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span>[] array : arrays1) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i : array) &#123;</span><br><span class="line">        System.out.print(i+<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">&quot;=================================&quot;</span>);</span><br><span class="line"><span class="comment">// 1.有效数,稀疏组行</span></span><br><span class="line"><span class="type">int</span> <span class="variable">cont</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i &lt; arrays1.length; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j=<span class="number">0</span>; j &lt; arrays1[i].length; j++)&#123;</span><br><span class="line">        <span class="keyword">if</span> (arrays1[i][j] !=<span class="number">0</span>)&#123;</span><br><span class="line">            cont++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.创建稀疏组</span></span><br><span class="line"><span class="type">int</span>[][] arrays2 = <span class="keyword">new</span> <span class="title class_">int</span>[cont+<span class="number">1</span>][<span class="number">3</span>];</span><br><span class="line">arrays2[<span class="number">0</span>][<span class="number">0</span>] = arrays1.length;</span><br><span class="line">arrays2[<span class="number">0</span>][<span class="number">1</span>] = arrays1.length;</span><br><span class="line">arrays2[<span class="number">0</span>][<span class="number">2</span>] = cont;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 3.记录关键信息,即表已创好</span></span><br><span class="line"><span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arrays1.length; i++)&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; arrays1[i].length; j++)&#123;</span><br><span class="line">        <span class="keyword">if</span> (arrays1[i][j] !=<span class="number">0</span>)&#123;</span><br><span class="line">            sum++;</span><br><span class="line">            arrays2[sum][<span class="number">0</span>] = i;</span><br><span class="line">            arrays2[sum][<span class="number">1</span>] = j;</span><br><span class="line">            arrays2[sum][<span class="number">2</span>] = arrays1[i][j];</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">&quot;稀疏数组：&quot;</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span>[] array : arrays2) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i : array) &#123;</span><br><span class="line">        System.out.print(i+<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">&quot;=================================&quot;</span>);</span><br><span class="line"><span class="comment">// 还原</span></span><br><span class="line"><span class="type">int</span>[][] arrays3 = <span class="keyword">new</span> <span class="title class_">int</span>[arrays2[<span class="number">0</span>][<span class="number">0</span>]][arrays2[<span class="number">0</span>][<span class="number">1</span>]];</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; arrays2.length; i++)&#123;</span><br><span class="line">    arrays3[arrays2[i][<span class="number">0</span>]][arrays2[i][<span class="number">1</span>]] = arrays2[i][<span class="number">2</span>];</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">&quot;稀疏组表：&quot;</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span>[] array : arrays3) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i : array) &#123;</span><br><span class="line">        System.out.print(i+<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <tags>
+        <tag>JavaSE学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Day2-JAVA-基础.md</title>
     <url>/archives/fd32663e.html</url>
     <content><![CDATA[<p>JAVA-基础</p>
